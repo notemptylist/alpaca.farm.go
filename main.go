@@ -97,6 +97,8 @@ func main() {
 	bars := getBars(*symbol, *years)
 	if len(bars) > 2 {
 		fmt.Printf("%v period ADR : %.2f\n", 20, computeADR(bars[len(bars)-20:]))
+		fmt.Printf("%v period ADR : %.2f\n", 50, computeADR(bars[len(bars)-50:]))
+		fmt.Printf("%v period ADR : %.2f\n", 200, computeADR(bars[len(bars)-200:]))
 		ranges := getRanges(bars)
 		sort.Slice(ranges, func(i, j int) bool { return ranges[i].move < ranges[j].move })
 		fmt.Printf("Largest gain on %v : %.2f (%.2f%%)\nLargest loss on %v : %.2f (%.2f%%)\n",
