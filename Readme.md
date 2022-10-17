@@ -5,15 +5,15 @@ To avoid hardcoding the API keys or leaving around dot files, the two scripts, `
 ```
 PS C:\src\alpaca.farm.go>.\initkeys.ps1
 Enter vault server address : http://example.com:8200
-Enter username for http://example:8200 : foo
+Enter username for http://example.com:8200 : foo
 Enter password : ******
 Written keys to .env.json
 ```
 
 ```
 ./initkeys.sh
-Enter vault server address : http://koduro.com:8200
-Enter username for http://koduro.com:8200 : foo
+Enter vault server address : http://example.com:8200
+Enter username for http://example.com:8200 : foo
 Enter password : Written keys to .env.json
 ```
 
